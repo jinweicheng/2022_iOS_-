@@ -1,7 +1,7 @@
 # 2022_iOS_Interview
 
 ## 一、常问的面试题目
-### 1-1、iOS事件响应链
+### 1-1、iOS事件响应链: <https://juejin.cn/post/6894518925514997767>
 ### 1-2、Set和字典区别：
     相同点（都是无序的不可重复），不同点（set存储方式是只有键值没有键名，字典是有key和value；字典get和set速度都很快内存占用很大）
 ### 1-3、数组和链表：
@@ -18,26 +18,26 @@
     (https://juejin.cn/post/6844904101839372295 )  unsafe_unretain区别
 ### 1-8、JS与OC交互
     https://github.com/reborn-developer/WKWebview-MessageHandler 
-### 1-9、 CALayer上的button的点击事件
+### 1-9、 CALayer上的button的点击事件： <https://juejin.cn/post/6844903533846724615>
 ### 1-10、项目优化包、App Tinning瘦身的操作、ipa包和App Store上包的区别
 ### 1-11、结构体、枚举方法、block的方法的派发方式
-### 1-12、class和staic的区别
+### 1-12、class和staic的区别: 都可以修饰类方法，但是static不能继承
 ### 1-13、swift中的String和oc中的nsstring的区别:
     swift中的String不分可变不可变，都是可变的字符串.通过prefix和suffix得到的为substring.
 		oc中的NSSring是引用类型，而swift中的String为值类型.
 		swift中的String为为结构体实现，oc中的NSSring为消息发送机制.
 		oc的NSSring和 swift中的String可以通过as进行类型转化.
 ### 1-14、IOS 进程间通信
-    https://juejin.cn/post/7065222370562146335 
+    <https://juejin.cn/post/7065222370562146335> 
 ### 1-15、iOS的性能优化
-    1、第三方库插桩： https://cloud.tencent.com/developer/article/1768447 
-    2、APP网络优化之DNS优化实践： https://juejin.cn/post/6844904036294983688 
-    3、iOS二进制重排: http://yulingtianxia.com/blog/2019/09/01/App-Order-Files/ 
-			https://cloud.tencent.com/developer/article/1814588 
-	 4、ibireme的runloop:https://blog.ibireme.com/2015/05/18/runloop/ 
-	 5、微信的卡顿检测工具: https://github.com/tencent/matrix/tree/master/matrix/matrix-iOS 
- 	 6、app启动速度优化https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247485101&idx=1&sn=abbbb6da1aba37a04047fc210363bcc9&token=2051547505&lang=zh_CN&scene=21#wechat_redirect 
-    7、app开发优化必看： https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1MzYzMjE0MQ==&action=getalbum&album_id=1590407423234719749&scene=173&from_msgid=2247485101&from_itemidx=1&count=3&nolastread=1#wechat_redirect 
+    1、第三方库插桩： <https://cloud.tencent.com/developer/article/1768447>
+    2、APP网络优化之DNS优化实践： <https://juejin.cn/post/6844904036294983688>
+    3、iOS二进制重排: <http://yulingtianxia.com/blog/2019/09/01/App-Order-Files/ > 
+			<https://cloud.tencent.com/developer/article/1814588>  
+	 4、ibireme的runloop:<https://blog.ibireme.com/2015/05/18/runloop/> 
+	 5、微信的卡顿检测工具: <https://github.com/tencent/matrix/tree/master/matrix/matrix-iOS> 
+ 	 6、app启动速度优化 <https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247485101&idx=1&sn=abbbb6da1aba37a04047fc210363bcc9&token=2051547505&lang=zh_CN&scene=21#wechat_redirect>  
+    7、app开发优化必看： <https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1MzYzMjE0MQ==&action=getalbum&album_id=1590407423234719749&scene=173&from_msgid=2247485101&from_itemidx=1&count=3&nolastread=1#wechat_redirect>  
     
     
 ## 二、OC与swift
@@ -80,7 +80,7 @@
     定义：函数式编程Functional Programming,简称FP是一种编程范式（把计算过程尽量分解成一系列可复用函数的调用）。
 		引用场景:map、flatmap、reduce、fliter等等…
 		优势：提升代码可读性，增加 代码的复用性。
-		flatmap和map的区别:https://blog.devtang.com/2016/03/05/swift-gym-4-map-and-flatmap/ 
+		flatmap和map的区别: <https://blog.devtang.com/2016/03/05/swift-gym-4-map-and-flatmap/>
 ### 2-7、Swift的面向协议编程:
       swift的面向协议编程POP(Protocol Oriented Programming)，优先考虑协议，面向协议结构体、枚举和类都可以使用
 		面向对象编程OOP(Object Oriented Programming)，优先考虑继承
@@ -89,27 +89,27 @@
 		场景:swift中枚举和结构体是值类型，不适合更加适合面向对象继承的代码实现；在不同的代码继承环路中，根据solid原则继承会增加代码的冗余和单一指责	不清楚的问题。
 		优势:协议的好处就是能够做到接口隔离，单一职责化，降低偶合度，减少代码冗余和提升可读性。
 		设计模式角度:继承有很大的问题，根据里式替换原则，子类是不能够重写父类的方法的，要不然会破会父类的完整性。
-		面向协议参考:https://juejin.cn/post/6844903928446844935 	
+		面向协议参考: <https://juejin.cn/post/6844903928446844935> 	
 ### 2-8、Swift的响应式编程:
       定义:Reactive Programming简称RP，是一种编程范式。一般是和函数式融合在一起使用，所以常叫函数式响应式编程。
-		场景:ReactiveCocoa简称RAC、ReactiveX简称RxSwift(参考：https://reactivex.io/languages.html ,中文地址: https://beeth0ven.github.io/RxSwift-Chinese-Documentation/ )
+		场景:ReactiveCocoa简称RAC、ReactiveX简称RxSwift(参考：<https://reactivex.io/languages.html> ,中文地址: <https://beeth0ven.github.io/RxSwift-Chinese-Documentation/> )
 		优势:可以简化异步编程、提供更优雅的数据绑定。平时开发中的数据绑定，状态监听代码的耦合性较高，错综复杂的依赖关系.
 		
 ## 三、组件化 
-    组件化了解： https://blog.51cto.com/mlcmlc/4900253 
-    组件化通讯：
+    组件化了解： <https://blog.51cto.com/mlcmlc/4900253>
+    组件化通讯：组件和组件之间如何通讯
     组件化新版本和旧版本sdwebimage: https://www.jianshu.com/p/63a9a20256de 
-    一个组件中的一个文件被其他二个组件使用，怎么优化  
+    一个组件中的一个文件被其他二个组件使用，怎么优化： subModule方式 
 
 ## 四、代码规范与架构
-### 4-1、SOLID原则:https://www.cnblogs.com/suli0827/p/9515842.html 
+### 4-1、SOLID原则: <https://www.cnblogs.com/suli0827/p/9515842.html> 
 AOP(面向切面编程)  是OOP的延续
-### 4-2、代码规范：https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html 
+### 4-2、代码规范：<https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html>
 ### 4-3、架构
-    https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52 
-	MVC、MVVM架构：https://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html 
-	MVP架构：https://juejin.cn/post/6964252878726758407 
-	VIPER架构: https://www.objc.io/issues/13-architecture/viper/  或者 https://objccn.io/issue-13-5/ 
+    <https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52>
+	MVC、MVVM架构：<https://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html>
+	MVP架构：<https://juejin.cn/post/6964252878726758407> 
+	VIPER架构: <https://www.objc.io/issues/13-architecture/viper/  或者 https://objccn.io/issue-13-5/> 
 	
 	
 ## 五、http/https
@@ -128,23 +128,23 @@ HTTP是什么？: http是规范二点之间传输文本、图片、音频、视�
 		第四层叫“应用层”（application layer），由于下面的三层把基础打得非常好，所以在这一层就“百花齐放”了，有各种面向具体应用的协议。例如 Telnet、SSH、FTP、SMTP 等等，当然还有我们的 HTTP
 	OSI 网络分层模型：物理层、链接层、网际层、传输层、会话层、表示层、应用层
 	
-为什么需要三次握手和四次分手？ https://www.cnblogs.com/Courage129/p/14324605.html
+为什么需要三次握手和四次分手？ <https://www.cnblogs.com/Courage129/p/14324605.html>
 
 ## 六、技术文章
 
-### 6-1、美团: https://tech.meituan.com/2021/02/25/cocoapods-hmap-prebuilt.html 
-### 6-2、头条: https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1MzYzMjE0MQ==&action=getalbum&album_id=1590407423234719749&scene=173&from_msgid=2247485101&from_itemidx=1&count=3&nolastread=1#wechat_redirect 
-### 6-3、极客: https://time.geekbang.org/column/article/85326 
-### 6-4、喵神: https://kemchenj.github.io/  
-### 6-5、戴铭: https://ming1016.github.io/categories/Programming/   
-		 https://github.com/ming1016 
-### 6-6、孙源runloop: https://v.youku.com/v_show/id_XODgxODkzODI0.html 
-### 6-7、官方的runloop: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html  
-### 6-8、招聘一个靠谱的iOS 开发： https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E4%B8%8B%EF%BC%89.md 
+### 6-1、美团: <https://tech.meituan.com/2021/02/25/cocoapods-hmap-prebuilt.html> 
+### 6-2、头条: <https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1MzYzMjE0MQ==&action=getalbum&album_id=1590407423234719749&scene=173&from_msgid=2247485101&from_itemidx=1&count=3&nolastread=1#wechat_redirect> 
+### 6-3、极客: <https://time.geekbang.org/column/article/85326 >
+### 6-4、喵神: <https://kemchenj.github.io/> 
+### 6-5、戴铭: <https://ming1016.github.io/categories/Programming/>   
+		 <https://github.com/ming1016>
+### 6-6、孙源runloop: <https://v.youku.com/v_show/id_XODgxODkzODI0.html> 
+### 6-7、官方的runloop: <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html>  
+### 6-8、招聘一个靠谱的iOS 开发： <https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E4%B8%8B%EF%BC%89.md> 
 
        	      
 ## 七、算法:
-### 7-1、排序算法: 快排 https://www.cnblogs.com/MOBIN/p/4681369.html 
+### 7-1、排序算法: 快排 <https://www.cnblogs.com/MOBIN/p/4681369.html> 
 ### 7-2、找两个view的最近父视图
 ### 7-3、链表反转 https://www.developers.pub/article/1070720  中间链表
 ### 7-4、爬楼梯：100节楼梯
